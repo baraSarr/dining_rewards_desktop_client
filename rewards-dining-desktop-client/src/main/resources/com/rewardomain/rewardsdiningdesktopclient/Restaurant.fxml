@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+
+<Panel styleClass="panel-primary"
+       fx:controller="com.rewardomain.rewardsdiningdesktopclient.controller.RestaurantController"
+       xmlns:fx="http://javafx.com/fxml/1" fx:id="restaurantPanel" >
+   <heading>
+      <Label fx:id="numberLabel" styleClass="h3" text="Panel title" alignment="CENTER"/>
+   </heading>
+   <body>
+      <GridPane hgap="10" vgap="10" >
+         <Label text="Name :" styleClass="text-primary" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+         <Label text="Percentage :" styleClass="text-primary" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+         <Label text="Availability :" styleClass="text-primary" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+         <Label fx:id="nameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+         <Label fx:id="percentageLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+         <Label fx:id="availabilityLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+         <Button fx:id="availabilityButton" mnemonicParsing="false"
+                 onMouseClicked="#changeAvailability" styleClass="btn, btn-primary" text="Button" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.rowSpan="2" alignment="CENTER"/>
+      </GridPane>
+   </body>
+</Panel>

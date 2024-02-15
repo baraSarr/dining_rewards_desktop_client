@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+
+<Panel styleClass="panel-primary"
+       fx:controller="com.rewardomain.rewardsdiningdesktopclient.controller.RewardController"
+       xmlns:fx="http://javafx.com/fxml/1" fx:id="rewardPanel" >
+    <heading>
+        <Label fx:id="confirmationNumberLabel" styleClass="h3" text="Panel title" alignment="CENTER"/>
+    </heading>
+    <body>
+        <GridPane hgap="10" vgap="10" >
+            <Label text="Amount :" styleClass="text-primary" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Merchant number :" styleClass="text-primary" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label text="Date :" styleClass="text-primary" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <Label fx:id="amountLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label fx:id="merchantNumberLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label fx:id="dateLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Button fx:id="distributeButton" mnemonicParsing="false"
+                    onMouseClicked="#distribute" styleClass="btn, btn-primary" text="Distribute" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.rowSpan="2" alignment="CENTER"/>
+        </GridPane>
+    </body>
+</Panel>
